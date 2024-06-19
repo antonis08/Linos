@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+.navbar {
+    background: #439415;     /* #73503d en to kafe j to prasino en #439415 */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky; /* Use 'fixed' if you want the navbar always visible */
+    top: 0;
+    width: 100%;
+    z-index: 10; /* Ensure it stays above other elements */
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    display: inline-block;
+    position: relative;
+}
+
+.menu-item a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-item a:hover {
+    background: #4b320c;  /*to grey en #555  */
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #fff;
+    color: #333;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown-menu a {
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background: #eee;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.styled-textboxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(80vh - 60px);
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.textbox {
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    background: #e9e9e9;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    font-size: 18px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.textbox:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+#textbox1{
+    display: flow-root;
+    
+}
+
+#textbox2{
+    
+    display: flow-root;
+}
+
+.lezanta{
+    display: inline-block;
+    color: #439415;
+    text-shadow: #fff 2px 5px;
+    font-size: 200%;
+}
